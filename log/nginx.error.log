@@ -1,0 +1,121 @@
+2018/11/13 08:17:26 [error] 6#6: *1 open() "/var/www/code/test/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: local.test.loc, request: "GET /favicon.ico HTTP/1.1", host: "local.test.loc", referrer: "http://local.test.loc/"
+2018/11/13 08:29:48 [error] 6#6: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Redis server went away in /var/www/code/mumall/App/Common/Common/PDOHandler.class.php:44
+Stack trace:
+#0 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(44): Redis->get('log_201811')
+#1 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(29): Common\Common\PDOHandler->initialize()
+#2 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Common\Common\PDOHandler->write(Array)
+#3 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#4 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(518): Monolog\Logger->addRecord(400, 'ErrorHandler_Ex...', Array)
+#5 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/ErrorHandler.php(137): Monolog\Logger->log(400, 'ErrorHandler_Ex...', Array)
+#6 [internal function]: Monolog\ErrorHandler->handleException(Object(RedisException))
+#7 {main}
+  thrown in /var/www" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /index.php/MpApi/Index/indexColumn HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "mall.immatchu.loc"
+2018/11/13 08:30:19 [error] 6#6: *1 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Redis server went away in /var/www/code/mumall/App/Common/Common/PDOHandler.class.php:44
+Stack trace:
+#0 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(44): Redis->get('log_201811')
+#1 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(29): Common\Common\PDOHandler->initialize()
+#2 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Common\Common\PDOHandler->write(Array)
+#3 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#4 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(518): Monolog\Logger->addRecord(400, 'ErrorHandler_Ex...', Array)
+#5 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/ErrorHandler.php(137): Monolog\Logger->log(400, 'ErrorHandler_Ex...', Array)
+#6 [internal function]: Monolog\ErrorHandler->handleException(Object(RedisException))
+#7 {main}
+  thrown in /var/www" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /index.php/MpApi/Index/indexColumn HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "mall.immatchu.loc"
+2018/11/13 08:37:47 [error] 6#6: *13 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Redis server went away in /var/www/code/mumall/App/Common/Common/PDOHandler.class.php:44
+Stack trace:
+#0 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(44): Redis->get('log_201811')
+#1 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(29): Common\Common\PDOHandler->initialize()
+#2 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Common\Common\PDOHandler->write(Array)
+#3 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#4 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(518): Monolog\Logger->addRecord(400, 'ErrorHandler_Ex...', Array)
+#5 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/ErrorHandler.php(137): Monolog\Logger->log(400, 'ErrorHandler_Ex...', Array)
+#6 [internal function]: Monolog\ErrorHandler->handleException(Object(RedisException))
+#7 {main}
+  thrown in /var/www" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /index.php/MpApi/Index/indexColumn HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "mall.immatchu.loc"
+2018/11/13 08:43:52 [error] 6#6: *24 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /index.php/MpApi/Index/indexColumn HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "mall.immatchu.loc"
+2018/11/14 08:26:49 [error] 6#6: *45 open() "/var/www/code/mumall/doc/mp/vendor/bootstrap.min.css.map" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /doc/mp/vendor/bootstrap.min.css.map HTTP/1.1", host: "mall.immatchu.loc"
+2018/11/14 08:27:47 [error] 6#6: *45 open() "/var/www/code/mumall/doc/mp/vendor/bootstrap.min.css.map" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /doc/mp/vendor/bootstrap.min.css.map HTTP/1.1", host: "mall.immatchu.loc"
+2018/11/19 03:29:34 [error] 6#6: *170 open() "/var/www/code/mumall/mumall/Public/css/Web/Index/Index.a68eab6a6c1662a21ad2.css" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/css/Web/Index/Index.a68eab6a6c1662a21ad2.css HTTP/1.1", host: "mall.immatchu.loc", referrer: "http://mall.immatchu.loc/"
+2018/11/19 03:29:34 [error] 6#6: *171 open() "/var/www/code/mumall/mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "mall.immatchu.loc", referrer: "http://mall.immatchu.loc/"
+2018/11/19 03:29:34 [error] 6#6: *173 open() "/var/www/code/mumall/mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "mall.immatchu.loc", referrer: "http://mall.immatchu.loc/"
+2018/11/19 03:29:35 [error] 6#6: *173 open() "/var/www/code/mumall/mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "mall.immatchu.loc", referrer: "http://mall.immatchu.loc/"
+2018/11/19 03:29:35 [error] 6#6: *173 open() "/var/www/code/mumall/mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "mall.immatchu.loc", referrer: "http://mall.immatchu.loc/"
+2018/11/19 05:10:51 [error] 6#6: *195 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: Redis server went away in /var/www/code/mumall/App/Common/Common/PDOHandler.class.php:44
+Stack trace:
+#0 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(44): Redis->get('log_201811')
+#1 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(29): Common\Common\PDOHandler->initialize()
+#2 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Common\Common\PDOHandler->write(Array)
+#3 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#4 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(518): Monolog\Logger->addRecord(400, 'ErrorHandler_Ex...', Array)
+#5 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/ErrorHandler.php(137): Monolog\Logger->log(400, 'ErrorHandler_Ex...', Array)
+#6 [internal function]: Monolog\ErrorHandler->handleException(Object(RedisException))
+#7 {main}
+  thrown in /var/www" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /index.php/Out/MarketMp/size HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "mall.immatchu.loc"
+2018/11/20 07:35:08 [error] 6#6: *126 open() "/var/www/code/info/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: info.immatchu.loc, request: "GET /favicon.ico HTTP/1.1", host: "info.immatchu.loc", referrer: "http://info.immatchu.loc/index.php"
+2018/11/20 08:24:16 [error] 6#6: *10 open() "/var/www/code/mumall/mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "192.168.3.109:8888", referrer: "http://192.168.3.109:8888/"
+2018/11/20 08:24:16 [error] 6#6: *1 open() "/var/www/code/mumall/mumall/Public/css/Web/Index/Index.a68eab6a6c1662a21ad2.css" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/css/Web/Index/Index.a68eab6a6c1662a21ad2.css HTTP/1.1", host: "192.168.3.109:8888", referrer: "http://192.168.3.109:8888/"
+2018/11/20 08:24:16 [error] 6#6: *11 open() "/var/www/code/mumall/mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "192.168.3.109:8888", referrer: "http://192.168.3.109:8888/"
+2018/11/20 08:24:16 [error] 6#6: *11 open() "/var/www/code/mumall/mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/vendors.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "192.168.3.109:8888", referrer: "http://192.168.3.109:8888/"
+2018/11/20 08:24:16 [error] 6#6: *11 open() "/var/www/code/mumall/mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js" failed (2: No such file or directory), client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /mumall/Public/js/Web/Index/Index.a68eab6a6c1662a21ad2.js HTTP/1.1", host: "192.168.3.109:8888", referrer: "http://192.168.3.109:8888/"
+2018/11/21 02:21:59 [error] 6#6: *681 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Common\Logic\OrderLogic::getIncompleteSizeFromOrder() in /var/www/code/mumall/App/Common/Logic/OrderLogic.class.php on line 936
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/code/mumall/index.php:0
+PHP message: PHP   2. require() /var/www/code/mumall/index.php:78
+PHP message: PHP   3. Think\Think::start() /var/www/code/mumall/ThinkPHP/ThinkPHP.php:97
+PHP message: PHP   4. Think\App::run() /var/www/code/mumall/ThinkPHP/Library/Think/Think.class.php:121
+PHP message: PHP   5. Think\App::exec() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:204
+PHP message: PHP   6. Think\App::invokeAction() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:110
+PHP message: PHP   7. ReflectionMethod->invoke() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:173
+PHP message: PHP   8. MpApi\Controller\OrderController->getUnpaidOrderCount() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:173
+PHP message: PHP   9. MpApi\Controller\OrderController->baseAction() /var/www/code/mumall/App/MpApi/Controller/OrderController.class.php:47
+PHP message: PHP  10. MpApi\Service\OrderService->getUnpaidOrderCount() /var/www/code/mumall/App/MpApi/Controller/BaseController.class.php:49
+PHP message: PHP  11. spl_autoload_call() /var/www/code/mumall/App/MpApi/Service/OrderService.class.php:60
+PHP message: PHP  12. Think\Think::autoload() /var/www/code/mumall/App/MpApi/Service/OrderService.class.php:60" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /MpApi/Order/getUnpaidOrderCount?platformType=MP_OM HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "192.168.3.109:8888", referrer: "https://servicewechat.com/wx4343e2c59a2097d9/devtools/page-frame.html"
+2018/11/21 02:23:01 [error] 6#6: *681 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Cannot redeclare Common\Logic\OrderLogic::getIncompleteSizeFromOrder() in /var/www/code/mumall/App/Common/Logic/OrderLogic.class.php on line 936
+PHP message: PHP Stack trace:
+PHP message: PHP   1. {main}() /var/www/code/mumall/index.php:0
+PHP message: PHP   2. require() /var/www/code/mumall/index.php:78
+PHP message: PHP   3. Think\Think::start() /var/www/code/mumall/ThinkPHP/ThinkPHP.php:97
+PHP message: PHP   4. Think\App::run() /var/www/code/mumall/ThinkPHP/Library/Think/Think.class.php:121
+PHP message: PHP   5. Think\App::exec() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:204
+PHP message: PHP   6. Think\App::invokeAction() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:110
+PHP message: PHP   7. ReflectionMethod->invoke() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:173
+PHP message: PHP   8. MpApi\Controller\OrderController->getUnpaidOrderCount() /var/www/code/mumall/ThinkPHP/Library/Think/App.class.php:173
+PHP message: PHP   9. MpApi\Controller\OrderController->baseAction() /var/www/code/mumall/App/MpApi/Controller/OrderController.class.php:47
+PHP message: PHP  10. MpApi\Service\OrderService->getUnpaidOrderCount() /var/www/code/mumall/App/MpApi/Controller/BaseController.class.php:49
+PHP message: PHP  11. spl_autoload_call() /var/www/code/mumall/App/MpApi/Service/OrderService.class.php:60
+PHP message: PHP  12. Think\Think::autoload() /var/www/code/mumall/App/MpApi/Service/OrderService.class.php:60" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /MpApi/Order/getUnpaidOrderCount?platformType=MP_OM HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "192.168.3.109:8888", referrer: "https://servicewechat.com/wx4343e2c59a2097d9/devtools/page-frame.html"
+2018/11/21 06:32:18 [error] 6#6: *1193 upstream timed out (110: Operation timed out) while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /MpApi/Index/indexColumn?platformType=MP_OM HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "192.168.3.109:8888", referrer: "https://servicewechat.com/wx4343e2c59a2097d9/devtools/page-frame.html"
+2018/11/21 06:37:33 [error] 6#6: *1206 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: NOAUTH Authentication required. in /var/www/code/mumall/App/Common/Common/PDOHandler.class.php:44
+Stack trace:
+#0 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(44): Redis->get('log_201811')
+#1 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(29): Common\Common\PDOHandler->initialize()
+#2 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Common\Common\PDOHandler->write(Array)
+#3 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#4 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(518): Monolog\Logger->addRecord(400, 'ErrorHandler_Ex...', Array)
+#5 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/ErrorHandler.php(137): Monolog\Logger->log(400, 'ErrorHandler_Ex...', Array)
+#6 [internal function]: Monolog\ErrorHandler->handleException(Object(RedisException))
+#7 {main}
+  thrown in" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /MpApi/Index/indexColumn?platformType=MP_OM HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "192.168.3.109:8888", referrer: "https://servicewechat.com/wx4343e2c59a2097d9/devtools/page-frame.html"
+2018/11/21 06:37:33 [error] 6#6: *1208 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: NOAUTH Authentication required. in /var/www/code/mumall/App/Common/Common/PDOHandler.class.php:44
+Stack trace:
+#0 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(44): Redis->get('log_201811')
+#1 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(29): Common\Common\PDOHandler->initialize()
+#2 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Common\Common\PDOHandler->write(Array)
+#3 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#4 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(518): Monolog\Logger->addRecord(400, 'ErrorHandler_Ex...', Array)
+#5 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/ErrorHandler.php(137): Monolog\Logger->log(400, 'ErrorHandler_Ex...', Array)
+#6 [internal function]: Monolog\ErrorHandler->handleException(Object(RedisException))
+#7 {main}
+  thrown in" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /MpApi/Index/secondKill?type=list&platformType=MP_OM HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "192.168.3.109:8888", referrer: "https://servicewechat.com/wx4343e2c59a2097d9/devtools/page-frame.html"
+2018/11/21 06:37:55 [error] 6#6: *1212 FastCGI sent in stderr: "PHP message: PHP Fatal error:  Uncaught RedisException: NOAUTH Authentication required. in /var/www/code/mumall/App/Common/Common/PDOHandler.class.php:44
+Stack trace:
+#0 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(44): Redis->get('log_201811')
+#1 /var/www/code/mumall/App/Common/Common/PDOHandler.class.php(29): Common\Common\PDOHandler->initialize()
+#2 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Handler/AbstractProcessingHandler.php(37): Common\Common\PDOHandler->write(Array)
+#3 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(337): Monolog\Handler\AbstractProcessingHandler->handle(Array)
+#4 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/Logger.php(518): Monolog\Logger->addRecord(400, 'ErrorHandler_Ex...', Array)
+#5 /var/www/code/mumall/vendor/monolog/monolog/src/Monolog/ErrorHandler.php(137): Monolog\Logger->log(400, 'ErrorHandler_Ex...', Array)
+#6 [internal function]: Monolog\ErrorHandler->handleException(Object(RedisException))
+#7 {main}
+  thrown in" while reading response header from upstream, client: 172.18.0.1, server: mall.immatchu.loc, request: "GET /Activity/MulpCoupon/mulpCouponStatus?platformType=MP_OM HTTP/1.1", upstream: "fastcgi://172.18.0.3:9000", host: "192.168.3.109:8888", referrer: "https://servicewechat.com/wx4343e2c59a2097d9/devtools/page-frame.html"

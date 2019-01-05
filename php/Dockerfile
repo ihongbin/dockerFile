@@ -106,62 +106,62 @@ RUN php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.ph
     && composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
 # Install Redis extension from source
-#COPY ./redis-4.1.0.tgz /tmp/redis.tgz
-#RUN ls /tmp
-#RUN mkdir -p /tmp/redis \
-#    && tar -xf /tmp/redis.tgz -C /tmp/redis --strip-components=1 \
-#    && rm /tmp/redis.tgz \
-#    && docker-php-ext-configure /tmp/redis --enable-redis \
-#    && docker-php-ext-install /tmp/redis \
-#    && rm -r /tmp/redis
-#
-## Install Xdebug extension from source
-#COPY ./xdebug-2.6.0.tgz /tmp/xdebug.tgz
-#RUN mkdir -p /tmp/xdebug \
-#    && tar -xf /tmp/xdebug.tgz -C /tmp/xdebug --strip-components=1 \
-#    && rm /tmp/xdebug.tgz \
-#    && docker-php-ext-configure /tmp/xdebug --enable-xdebug \
-#    && docker-php-ext-install /tmp/xdebug \
-#    && rm -r /tmp/xdebug
-#
-## msgpack
-#COPY ./msgpack-2.0.2.tgz /tmp/msgpack.tgz
-#RUN mkdir -p /tmp/msgpack \
-#    && tar -xf /tmp/msgpack.tgz -C /tmp/msgpack --strip-components=1 \
-#    && rm /tmp/msgpack.tgz \
-#    && docker-php-ext-configure /tmp/msgpack --enable-msgpack \
-#    && docker-php-ext-install /tmp/msgpack \
-#    && rm -r /tmp/msgpack
-#
-## yaf
-#COPY ./yaf-3.0.7.tgz /tmp/yaf.tgz
-#RUN mkdir -p /tmp/yaf \
-#    && tar -xf /tmp/yaf.tgz -C /tmp/yaf --strip-components=1 \
-#    && rm /tmp/yaf.tgz \
-#    && docker-php-ext-configure /tmp/yaf --enable-yaf \
-#    && docker-php-ext-install /tmp/yaf \
-#    && rm -r /tmp/yaf
-#
-## swoole
-#COPY ./swoole-4.2.7.tgz /tmp/swoole.tgz
-#RUN mkdir -p /tmp/swoole \
-#    && tar -xf /tmp/swoole.tgz -C /tmp/swoole --strip-components=1 \
-#    && rm /tmp/swoole.tgz \
-#    && docker-php-ext-configure /tmp/swoole --enable-swoole \
-#    && docker-php-ext-install /tmp/swoole \
-#    && rm -r /tmp/swoole
-#
-## libcurl
-#RUN apt-get update \
-#    &&  apt-get install -y curl \
-#    && apt-get install -y libcurl3 \
-#    && apt-get install -y libcurl4-openssl-dev 
-#
-## yar
-#COPY ./yar-2.0.4.tgz /tmp/yar.tgz   
-#RUN mkdir -p /tmp/yar \
-#    && tar -xf /tmp/yar.tgz -C /tmp/yar --strip-components=1 \
-#    && rm /tmp/yar.tgz \
-#    && docker-php-ext-configure /tmp/yar --enable-yar \
-#    && docker-php-ext-install /tmp/yar \
-#    && rm -r /tmp/yar
+COPY ./redis-4.1.0.tgz /tmp/redis.tgz
+RUN ls /tmp
+RUN mkdir -p /tmp/redis \
+    && tar -xf /tmp/redis.tgz -C /tmp/redis --strip-components=1 \
+    && rm /tmp/redis.tgz \
+    && docker-php-ext-configure /tmp/redis --enable-redis \
+    && docker-php-ext-install /tmp/redis \
+    && rm -r /tmp/redis
+
+# Install Xdebug extension from source
+COPY ./xdebug-2.6.0.tgz /tmp/xdebug.tgz
+RUN mkdir -p /tmp/xdebug \
+    && tar -xf /tmp/xdebug.tgz -C /tmp/xdebug --strip-components=1 \
+    && rm /tmp/xdebug.tgz \
+    && docker-php-ext-configure /tmp/xdebug --enable-xdebug \
+    && docker-php-ext-install /tmp/xdebug \
+    && rm -r /tmp/xdebug
+
+# msgpack
+COPY ./msgpack-2.0.2.tgz /tmp/msgpack.tgz
+RUN mkdir -p /tmp/msgpack \
+    && tar -xf /tmp/msgpack.tgz -C /tmp/msgpack --strip-components=1 \
+    && rm /tmp/msgpack.tgz \
+    && docker-php-ext-configure /tmp/msgpack --enable-msgpack \
+    && docker-php-ext-install /tmp/msgpack \
+    && rm -r /tmp/msgpack
+
+# yaf
+COPY ./yaf-3.0.7.tgz /tmp/yaf.tgz
+RUN mkdir -p /tmp/yaf \
+    && tar -xf /tmp/yaf.tgz -C /tmp/yaf --strip-components=1 \
+    && rm /tmp/yaf.tgz \
+    && docker-php-ext-configure /tmp/yaf --enable-yaf \
+    && docker-php-ext-install /tmp/yaf \
+    && rm -r /tmp/yaf
+
+# swoole
+COPY ./swoole-4.2.7.tgz /tmp/swoole.tgz
+RUN mkdir -p /tmp/swoole \
+    && tar -xf /tmp/swoole.tgz -C /tmp/swoole --strip-components=1 \
+    && rm /tmp/swoole.tgz \
+    && docker-php-ext-configure /tmp/swoole --enable-swoole \
+    && docker-php-ext-install /tmp/swoole \
+    && rm -r /tmp/swoole
+
+# libcurl
+RUN apt-get update \
+    &&  apt-get install -y curl \
+    && apt-get install -y libcurl3 \
+    && apt-get install -y libcurl4-openssl-dev 
+
+# yar
+COPY ./yar-2.0.4.tgz /tmp/yar.tgz   
+RUN mkdir -p /tmp/yar \
+    && tar -xf /tmp/yar.tgz -C /tmp/yar --strip-components=1 \
+    && rm /tmp/yar.tgz \
+    && docker-php-ext-configure /tmp/yar --enable-yar \
+    && docker-php-ext-install /tmp/yar \
+    && rm -r /tmp/yar
